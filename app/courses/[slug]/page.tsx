@@ -9,8 +9,19 @@ function slugToTitle(slug: string) {
     .join(" ");
 }
 
-export default function CoursePage({ params }: { params: { slug: string } }) {
-  const courseTitle = slugToTitle(params.slug);
+interface PageProps {
+  params: Promise<{
+    slug: string;
+  }>;
+}
+
+export default async function CoursePage({ params }: PageProps) {
+  const resolvedParams = await params;
+  if (!resolvedParams?.slug) {
+    notFound();
+  }
+
+  const courseTitle = slugToTitle(resolvedParams.slug);
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
