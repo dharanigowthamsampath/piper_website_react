@@ -58,16 +58,16 @@ export default async function CoursePage({ params }: PageProps) {
               <p className="text-gray-600">
                 This comprehensive course is designed to provide you with
                 in-depth knowledge and practical skills in {courseTitle}.
-                Whether you're a beginner or looking to advance your skills,
-                this course offers a structured learning path to help you
-                achieve your goals.
+                Whether you&apos;re a beginner or looking to advance your
+                skills, this course offers a structured learning path to help
+                you achieve your goals.
               </p>
             </div>
 
             {/* What You'll Learn */}
             <div className="mb-12">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                What You'll Learn
+                What You&apos;ll Learn
               </h2>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">

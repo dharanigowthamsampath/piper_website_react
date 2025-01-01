@@ -1,12 +1,6 @@
 "use client";
 
-import {
-  FaClock,
-  FaBook,
-  FaStar,
-  FaUsers,
-  FaChevronDown,
-} from "react-icons/fa";
+import { FaStar, FaUsers, FaChevronDown } from "react-icons/fa";
 import courses from "../data/all-courses.json";
 import { useState } from "react";
 

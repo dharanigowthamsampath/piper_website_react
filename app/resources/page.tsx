@@ -7,9 +7,9 @@ export default function Resources() {
           Coming Soon!
         </h2>
         <p className="text-gray-600">
-          We're currently working on curating valuable resources to enhance your
-          learning experience. Check back soon for study materials, guides, and
-          helpful tools.
+          We&apos;re currently working on curating valuable resources to enhance
+          your learning experience. Check back soon for study materials, guides,
+          and helpful tools.
         </p>
       </div>
     </main>
