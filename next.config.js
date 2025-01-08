@@ -12,6 +12,20 @@ const nextConfig = {
     ],
     unoptimized: false,
   },
+  async redirects() {
+    return [
+      {
+        source: "/contact.html",
+        destination: "/contact",
+        permanent: true,
+      },
+      {
+        source: "/about.html",
+        destination: "/about",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
