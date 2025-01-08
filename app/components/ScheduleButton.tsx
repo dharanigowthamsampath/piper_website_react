@@ -1,12 +1,15 @@
 "use client";
 
 import { FaArrowRight } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 
 const ScheduleButton = () => {
+  const router = useRouter();
+
   return (
     <button
       onClick={() => {
-        /* Add your schedule visit logic here */
+        router.push("/contact");
       }}
       className="inline-flex items-center gap-2 px-8 py-4 bg-green-600 text-white rounded-full
                  hover:bg-green-700 transition-all duration-300 group shadow-lg hover:shadow-xl
